@@ -2,6 +2,7 @@ import React, {Component } from 'react';
 import './App.css';
 
 class Clock extends Component {
+  
   constructor(props){
     super(props);
 
@@ -22,6 +23,7 @@ class Clock extends Component {
   }
 
   getTimeUntil(deadline){
+    
     const time = Date.parse(deadline) - Date.parse(new Date());
     const seconds = Math.floor((time/1000) % 60);
     const minutes = Math.floor((time/1000/60) % 60);
